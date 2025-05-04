@@ -1,11 +1,5 @@
 <div align="center">
-  <iframe 
-    src="https://rissmorisson.github.io/rissmorisson/stickman.html" 
-    width="800" 
-    height="200"
-    frameborder="0"
-    sandbox="allow-scripts">
-  </iframe>
+  <img src="welcome.gif" width="100%" alt="Welcome Animation">
 </div>
 
 <h1 align="center">Hey 👋 I'm Risky Cahya Nugraha</h1>
