@@ -1,5 +1,3 @@
-<iframe src="https://rissmorisson/.github/workflows/stickman.html" width="800" height="200" frameborder="0" scrolling="no" sandbox="allow-scripts"></iframe>
-
 <h1 align="center">Hey 👋 I'm Risky Cahya Nugraha</h1>
 <p align="center">🚀 Developer | 🤖 AI Enthusiast | 🌏 Based in Indonesia</p>
 
