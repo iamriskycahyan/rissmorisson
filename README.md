@@ -11,7 +11,10 @@
 
 <img height="100px" width="100%" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHh4aDhsMHF6dmI4b3pybWR2bWlhdDJ2dXI0bzBjanAxaDdtZzdzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TIj8cbzWYKnE9ul3ab/giphy.gif"  />
 
+<div align="center">
+
 ## 🚀 About Me
+</div>
 
 🎓 Software Engineering graduate with a passion for **web technologies**, **AI integration**, and **startup innovation**. I build scalable digital solutions that blend function and creativity.
 
@@ -100,7 +103,7 @@
   <a href="https://discord.gg/3X8uqHtb" target="_blank">
     <img src="https://skillicons.dev/icons?i=discord" height="40" />
   </a>
-  <a href="https://instagram.com/in/riskyycn_" target="_blank">
+  <a href="https://www.instagram.com/riskyycn_/" target="_blank">
     <img src="https://skillicons.dev/icons?i=instagram" height="40" />
   </a>
   <a href="https://linkedin.com/in/riskycahyanugraha" target="_blank">
@@ -109,7 +112,7 @@
   <a href="https://github.com/RissMorisson" target="_blank">
     <img src="https://skillicons.dev/icons?i=github" height="40" />
   </a>
-  <a href="mailto:riskycahya034@gmail.com">
+  <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=riskycahya034@gmail.com" target="_blank">
     <img src="https://skillicons.dev/icons?i=gmail" height="40" />
   </a>
 </p>
