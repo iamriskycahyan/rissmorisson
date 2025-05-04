@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animated Welcome Text</title>
+  <style>
+    canvas { 
+      border: 1px solid black; 
+      background: #FFB000; 
+      display: block; 
+      margin: 0 auto; 
+    }
+    body { 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      margin: 0; 
+      background: #111; 
+      color: white; 
+      font-family: Arial, sans-serif; 
+    }
+    .canvas-container {
+      position: relative;
+      width: 800px;
+      height: 190px; 
+      background: #FFB000; 
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas-container">
+    <canvas id="canvas" width="800" height="200"></canvas>
+  </div>
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Pixel letter templates (5x5 grid) with apostrophe
+    const letterTemplates = {
+      A: [[0,1,1,0,0],[1,0,0,1,0],[1,1,1,1,0],[1,0,0,1,0],[1,0,0,1,0]],
+      B: [[1,1,1,0,0],[1,0,0,1,0],[1,1,1,0,0],[1,0,0,1,0],[1,1,1,0,0]],
+      C: [[1,1,1,1,0],[1,0,0,0,0],[1,0,0,0,0],[1,0,0,0,0],[1,1,1,1,0]],
+      D: [[1,1,1,0,0],[1,0,0,1,0],[1,0,0,1,0],[1,0,0,1,0],[1,1,1,0,0]],
+      E: [[1,1,1,1,0],[1,0,0,0,0],[1,1,1,0,0],[1,0,0,0,0],[1,1,1,1,0]],
+      F: [[1,1,1,1,0],[1,0,0,0,0],[1,1,1,0,0],[1,0,0,0,0],[1,0,0,0,0]],
+      G: [[1,1,1,1,0],[1,0,0,0,0],[1,0,1,1,0],[1,0,0,1,0],[1,1,1,1,0]],
+      H: [[1,0,0,1,0],[1,0,0,1,0],[1,1,1,1,0],[1,0,0,1,0],[1,0,0,1,0]],
+      I: [[1,1,1,0,0],[0,1,0,0,0],[0,1,0,0,0],[0,1,0,0,0],[1,1,1,0,0]],
+      J: [[1,1,1,1,0],[0,0,1,0,0],[0,0,1,0,0],[1,0,1,0,0],[1,1,1,0,0]],
+      K: [[1,0,0,1,0],[1,0,1,0,0],[1,1,0,0,0],[1,0,1,0,0],[1,0,0,1,0]],
+      L: [[1,0,0,0,0],[1,0,0,0,0],[1,0,0,0,0],[1,0,0,0,0],[1,1,1,1,0]],
+      M: [[1,0,0,0,1],[1,1,0,1,1],[1,0,1,0,1],[1,0,0,0,1],[1,0,0,0,1]],
+      N: [[1,0,0,1,0],[1,1,0,1,0],[1,0,1,1,0],[1,0,0,1,0],[1,0,0,1,0]],
+      O: [[1,1,1,1,0],[1,0,0,1,0],[1,0,0,1,0],[1,0,0,1,0],[1,1,1,1,0]],
+      P: [[1,1,1,0,0],[1,0,0,1,0],[1,1,1,0,0],[1,0,0,0,0],[1,0,0,0,0]],
+      Q: [[1,1,1,1,0],[1,0,0,1,0],[1,0,0,1,0],[1,0,1,1,0],[1,1,1,1,1]],
+      R: [[1,1,1,0,0],[1,0,0,1,0],[1,1,1,0,0],[1,0,1,0,0],[1,0,0,1,0]],
+      S: [[1,1,1,1,0],[1,0,0,0,0],[1,1,1,1,0],[0,0,0,1,0],[1,1,1,1,0]],
+      T: [[1,1,1,1,1],[0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0]],
+      U: [[1,0,0,1,0],[1,0,0,1,0],[1,0,0,1,0],[1,0,0,1,0],[1,1,1,1,0]],
+      V: [[1,0,0,0,1],[1,0,0,0,1],[1,0,0,0,1],[0,1,0,1,0],[0,0,1,0,0]],
+      W: [[1,0,0,0,1],[1,0,0,0,1],[1,0,1,0,1],[1,1,0,1,1],[1,0,0,0,1]],
+      X: [[1,0,0,0,1],[0,1,0,1,0],[0,0,1,0,0],[0,1,0,1,0],[1,0,0,0,1]],
+      Y: [[1,0,0,0,1],[0,1,0,1,0],[0,0,1,0,0],[0,0,1,0,0],[0,0,1,0,0]],
+      Z: [[1,1,1,1,0],[0,0,0,1,0],[0,0,1,0,0],[0,1,0,0,0],[1,1,1,1,0]],
+      ' ': [[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]],
+      "'": [[0,0,1,0,0],[0,0,1,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]] // Apostrophe symbol
+    };
+
+    let name = "WELCOME TO RISKY'S GITHUB";
+    let letters = name.split('').map(char => letterTemplates[char] || letterTemplates[' ']);
+    let letterPositions = [];
+    let currentLetterIndex = -1; // Start from -1 to trigger first letter
+    let blinkCounter = 0;
+    const blinkDuration = 30; // Frames per blink cycle
+    const letterColors = ['#ff5555', '#55ff55', '#5555ff', '#ffff55', '#ff55ff', '#ffaa55', '#55ffaa', '#aa55ff'];
+
+    function updateLetters() {
+      name = "WELCOME TO RISKY'S GITHUB";
+      letters = name.split('').map(char => letterTemplates[char] || letterTemplates[' ']);
+      letterPositions = [];
+      let startX = 50;
+      for (let i = 0; i < letters.length; i++) {
+        letterPositions.push(startX);
+        startX += (letters[i][0]?.length || 5) * 5 + 5;
+      }
+      currentLetterIndex = -1; // Reset to start animation
+      blinkCounter = 0;
+    }
+
+    updateLetters();
+
+    function drawLetters() {
+      const lines = ["WELCOME TO", "RISKY'S GITHUB"];
+      for (let lineIdx = 0; lineIdx < lines.length; lineIdx++) {
+        const line = lines[lineIdx].split('');
+        let startX = 50;
+        for (let l = 0; l < line.length; l++) {
+          const char = line[l];
+          const letter = letterTemplates[char] || letterTemplates[' '];
+          if (!letter) continue;
+          const xOffset = startX + l * (letter[0]?.length || 5) * 5;
+          const yOffset = 50 + lineIdx * 60;
+          const color = letterColors[l % letterColors.length];
+          const isActive = l <= currentLetterIndex || (currentLetterIndex === -1 && l === 0); // Show only up to current letter
+          if (isActive) {
+            const shouldBlink = blinkCounter % blinkDuration < blinkDuration / 2; // Blink effect
+            for (let row = 0; row < letter.length; row++) {
+              for (let col = 0; col < (letter[row]?.length || 5); col++) {
+                if (letter[row]?.[col] === 1) {
+                  ctx.fillStyle = shouldBlink ? color : '#222'; // Blink by toggling color
+                  ctx.fillRect(xOffset + col * 5, yOffset + row * 5, 5, 5);
+                  ctx.strokeStyle = '#fff';
+                  ctx.strokeRect(xOffset + col * 5, yOffset + row * 5, 5, 5);
+                }
+              }
+            }
+          }
+          startX += (letter[0]?.length || 5) * 5 + 5;
+        }
+      }
+    }
+
+    function update() {
+      blinkCounter++;
+      if (blinkCounter % 10 === 0 && currentLetterIndex < letters.length - 1) { // New letter every 10 frames
+        currentLetterIndex++;
+      }
+      if (currentLetterIndex === letters.length - 1 && blinkCounter > blinkDuration * 2) {
+        currentLetterIndex = 0; // Reset to loop animation
+        blinkCounter = 0;
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawLetters();
+      update();
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+</body>
+</html>
+
