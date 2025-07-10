@@ -123,6 +123,16 @@
 
 <img height="100px" width="100%" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHh4aDhsMHF6dmI4b3pybWR2bWlhdDJ2dXI0bzBjanAxaDdtZzdzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TIj8cbzWYKnE9ul3ab/giphy.gif"  />
 
+### 💰 You can support me
+
+<div align="center">
+
+  [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/riskycahyan) [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/riskycahyan) [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/riskycahyan) 
+
+</div>
+
+<img height="100px" width="100%" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHh4aDhsMHF6dmI4b3pybWR2bWlhdDJ2dXI0bzBjanAxaDdtZzdzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TIj8cbzWYKnE9ul3ab/giphy.gif"  />
+
 ###
 
 <picture align="center">
