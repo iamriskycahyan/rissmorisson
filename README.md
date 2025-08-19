@@ -104,7 +104,7 @@
 ### 🌐 Connect With Me
 
 <p align="center">
-  <a href="discord.com/users/1406497287026376705" target="_blank">
+  <a href="https://www.discord.com/users/1406497287026376705" target="_blank">
     <img src="https://skillicons.dev/icons?i=discord" height="40" />
   </a>
   <a href="https://www.instagram.com/iamriskycahyan/" target="_blank">
