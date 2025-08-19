@@ -77,9 +77,9 @@
 
 <div align="center">
 
-![](https://github-readme-stats.vercel.app/api?username=RissMorisson&theme=vision-friendly-dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=RissMorisson&theme=vision-friendly-dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=RissMorisson&theme=vision-friendly-dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-readme-stats.vercel.app/api?username=iamriskycahyan&theme=vision-friendly-dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=iamriskycahyan&theme=vision-friendly-dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=iamriskycahyan&theme=vision-friendly-dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 </div>
 
@@ -92,7 +92,7 @@
 
 <div align="center">
 
-![](https://github-contributor-stats.vercel.app/api?username=RissMorisson&limit=5&theme=vision-friendly-dark&combine_all_yearly_contributions=true)
+![](https://github-contributor-stats.vercel.app/api?username=iamriskycahyan&limit=5&theme=vision-friendly-dark&combine_all_yearly_contributions=true)
 
 <!-- ---
 [![](https://visitcount.itsvg.in/api?id=RissMorisson&icon=0&color=12)](https://visitcount.itsvg.in) -->
@@ -104,19 +104,19 @@
 ### 🌐 Connect With Me
 
 <p align="center">
-  <a href="https://discord.gg/3X8uqHtb" target="_blank">
+  <a href="discord.com/users/1406497287026376705" target="_blank">
     <img src="https://skillicons.dev/icons?i=discord" height="40" />
   </a>
-  <a href="https://www.instagram.com/riskyycn_/" target="_blank">
+  <a href="https://www.instagram.com/iamriskycahyan/" target="_blank">
     <img src="https://skillicons.dev/icons?i=instagram" height="40" />
   </a>
   <a href="https://linkedin.com/in/riskycahyanugraha" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin" height="40" />
   </a>
-  <a href="https://github.com/RissMorisson" target="_blank">
+  <a href="https://github.com/iamriskycahyan" target="_blank">
     <img src="https://skillicons.dev/icons?i=github" height="40" />
   </a>
-  <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=riskycahya034@gmail.com" target="_blank">
+  <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=riskycahyanugraha@gmail.com" target="_blank">
     <img src="https://skillicons.dev/icons?i=gmail" height="40" />
   </a>
 </p>
@@ -127,7 +127,7 @@
 
 <div align="center">
 
-  [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/riskycahyan) [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/riskycahyan) [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/riskycahyan) 
+  [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/iamriskycahyan) [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/iamriskycahyan) [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/iamriskycahyan) 
 
 </div>
 
@@ -136,9 +136,9 @@
 ###
 
 <picture align="center">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RissMorisson/RissMorisson/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RissMorisson/RissMorisson/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/RissMorisson/RissMorisson/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/iamriskycahyan/iamriskycahyan/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/iamriskycahyan/iamriskycahyan/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/iamriskycahyan/iamriskycahyan/output/pacman-contribution-graph.svg">
 </picture>
 
 ###
